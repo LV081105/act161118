@@ -7,11 +7,11 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="ejemplojpa"
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		
+
 		<!-- Clases mapeadas con el paquete correcto para la actividad -->
 		<class>com.app.logica.Artista</class>
 		<class>com.app.logica.Cancion</class>
-		
+
 		<properties>
 			<property name="jakarta.persistence.jdbc.driver"
 				value="com.mysql.cj.jdbc.Driver" />
@@ -19,6 +19,7 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 				value="jdbc:mysql://localhost:3306/musicabd" />
 			<property name="jakarta.persistence.jdbc.user" value="root" />
 			<property name="jakarta.persistence.jdbc.password" value="" />
+			
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.MySQL8Dialect" />
